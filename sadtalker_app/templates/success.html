@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Generation Submitted{% endblock %}
+{% block content %}
+<div class="card mx-auto p-5 text-center" style="max-width: 600px;">
+    <h2 class="fw-semibold text-primary mb-3">💫 Hold Tight!</h2>
+    <p class="lead text-muted mb-4">
+        Your video is now being prepared with care!<br>
+        We'll email you as soon as it's ready to view.<br>
+        Thanks for your patience and creativity 💌
+    </p>
+
+    {% if final_audio_url %}
+        <div class="mt-4">
+            <h5 class="text-success">🔊 Preview Your Cloned Voice:</h5>
+            <audio controls style="width: 100%;">
+                <source src="{{ final_audio_url }}" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    {% endif %}
+
+    <a href="/" class="btn btn-outline-primary mt-4 px-4 fw-semibold">🔙 Back to Home</a>
+</div>
+{% endblock %}

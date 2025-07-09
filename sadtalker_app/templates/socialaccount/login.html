@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load form_tags %}
+
+{% block title %}Google Login{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-center align-items-center" style="min-height: 75vh;">
+    <div class="card shadow-sm p-5 text-center" style="max-width: 460px; width: 100%;">
+        <h3 class="fw-semibold mb-3">🔐 Confirm Google Sign-In</h3>
+        <p class="text-muted mb-3">
+            You're about to sign in with your <strong>Google</strong> account.<br>
+            If not redirected automatically, click the button below.
+        </p>
+
+        <form method="post" action="">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-primary w-100 fw-semibold">✅ Continue with Google</button>
+        </form>
+
+        <a href="{% url 'account_login' %}" class="btn btn-link mt-3 text-decoration-none">❌ Cancel</a>
+    </div>
+</div>
+{% endblock %}
