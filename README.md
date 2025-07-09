@@ -3,14 +3,22 @@
 
 ✨ Features
 🖼️ Upload a face image
+
 🧠 Enter text you want the avatar to speak
+
 🎤 Choose a sample voice (Female, Neutral Male, Heroic Male)
+
 🔊 Realistic text-to-speech with ElevenLabs
+
 🎞️ Generate lip-synced talking-head videos using SadTalker
+
 📧 Email notifications when your video is ready
 
+
 🚀 How It Works
+
 1. Choose a voice or record/upload your own.
-2.Type your message.
-3.Upload a face image.
-4.Click Generate – your avatar comes alive!
+2. Type your message.
+3. Upload a face image.
+4. Click Generate – your avatar comes alive!
+
